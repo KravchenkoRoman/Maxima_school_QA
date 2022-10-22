@@ -1,0 +1,16 @@
+public class MyProfile {
+    public static void main(String[] args){
+
+        String enterNameAndLastName = "Введите имя и фамилию на разных строках";
+        System.out.println(enterNameAndLastName);
+
+
+        Scanner keyboard = new Scanner(System.in);
+        String name = keyboard.nextLine();
+        String familyName = keyboard.nextLine();
+
+        System.out.println("Имя: " + name);
+        System.out.println("Фамилия: " + familyName);
+
+    }
+}
