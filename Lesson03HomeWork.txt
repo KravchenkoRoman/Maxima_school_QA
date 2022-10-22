@@ -1,0 +1,20 @@
+public class MyProfile {
+
+    public static void main(String[] args){
+
+    String familyName = "Kravchenko",name;
+    name = " Roman";
+    String profession = "Paramedic";
+    int age = 40;
+    int weight = 70;
+    int height = 170;
+
+        String s = familyName + "" + name;
+        // String result = String familyName + name;
+
+        System.out.println(s);
+    System.out.println(profession);
+    System.out.println(age);
+    System.out.println(weight);
+    System.out.println(height);
+}}
