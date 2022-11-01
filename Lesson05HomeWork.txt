@@ -1,0 +1,89 @@
+import java.util.Objects;
+import java.util.Scanner;
+
+public class Lesson05HomeWork {
+    public static void main(String[] args) {
+
+// Доработайте пример с øиклом while (слайд 30) - преобразуйте его в
+//бесконеùнýй øикл с вýходом, если введена строка “Exit”
+
+        String str = new String();
+        Scanner scanner = new Scanner(System.in);
+        do {
+            str = scanner.nextLine();
+             }
+        while (!Objects.equals(str, "Exit"));
+    }
+}
+
+//Доработайте пример с øиклом for (слайд 36) - обработайте ситуаøиĀ с
+//вводом отриøателþного ùисла
+public class Lesson05HomeWork2 {
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+System.out.print("Please enter a number: ");
+        int x = scanner.nextInt();
+        int sum = 0;
+        for (int i = 0; i >= x; i--) {
+        sum += i;
+        }
+        System.out.printf("The sum of all numbers from 0 to %d is %d", x, sum);
+    }
+}
+
+public class Lesson05HomeWork3 {
+    public static void main(String[] args) {
+        String str;
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.print("Please enter something");
+            str = scanner.nextLine();
+        } while (str.length() == 1);
+    }
+}
+
+
+
+// Доработайте пример с оператором if… else (слайд 45) - если полþзователþ
+//вводит знаùение вне диапазона 0 - 100, вýвести сообûение “Введено
+//некорректное знаùение” и попроситþ повторитþ ввод (исполþзоватþ øикл)
+public class Lesson05HomeWork4 {
+    public static void main(String[] args) {
+        while(true){
+        System.out.print("Пожалуйста, введите значение: ");
+        int score = new Scanner(System.in).nextInt();
+        if (score > 100) {
+            System.out.println("Введено некорректное значение. Повторите ввод.");
+        } else if (score < 0) {
+            System.out.println("Введено некорректное значение. Повторите ввод.");
+        } else if (score >= 0 && score <= 100) {
+                System.out.println("Корректно");
+            break;
+        }
+        }
+
+    }
+}
+
+        //Реализуйте пулþт дистанøионного управлениā: полþзователþ вводит номер
+        //канала, программа вýводит название канала. Вýход из программý по
+        //вводу “0”. Исполþзуйте массив.
+        public class Lesson05HomeWork5 {
+            public static void main(String[] args) {
+        while (true) {
+            String[] numbers = {"exit", "HDL", "NatGeo"};
+            System.out.print("Пожалуйста, введите номер канала: ");
+            int number = new Scanner(System.in).nextInt();
+            if (number == 1) {
+                System.out.println(numbers[1]);
+            }
+            else if (number == 2) {
+                System.out.println(numbers[2]);
+            }
+            else if (number == 0) {
+                System.out.println(numbers[0]);
+                break;
+            }
+        }
+    }
+}
