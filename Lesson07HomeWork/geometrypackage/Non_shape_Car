@@ -1,0 +1,40 @@
+package geometrypackage;
+// сотрудник будет реализовывать метод getShape и он точно так же будет возвращать
+// значение дерев. макент., S=2*1 метр, S гроба вернет
+
+public class Non_shape_Car implements Shape {
+
+    public Non_shape_Car(){
+        int length = 0;
+    }
+
+    public Non_shape_Car(double lengthCar, double widthCar){
+        length = lengthCar;
+        width = widthCar;
+    }
+
+    @Override
+    public double getArea() {
+        return length * width;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    private double length;
+    private double width;
+
+}
