@@ -1,0 +1,13 @@
+public class Duck extends Birds{
+    @Override
+    public void Moving() {
+        System.out.print("Утка ");
+        super.Moving();
+    }
+
+    @Override
+    public void Breathing() {
+        System.out.print("Утка ");
+        super.Breathing();
+    }
+}
