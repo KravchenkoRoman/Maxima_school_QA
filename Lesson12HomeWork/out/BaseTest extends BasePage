@@ -1,0 +1,5 @@
+class BaseTest extends BasePage{
+    public BaseTest(){
+        System.out.println("BaseTest");
+    }
+}
