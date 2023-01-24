@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Animals implements Breathe, Move{
+
+    @Override
+    public void Breathing() {
+        System.out.println("дышит лёгкими через нос/рот");
+
+    }
+
+    @Override
+    public void Moving() {
+        System.out.println("передвигается на четырех лапах");
+
+    }
+}
