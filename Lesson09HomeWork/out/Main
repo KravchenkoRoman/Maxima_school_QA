@@ -1,0 +1,66 @@
+// Todo: think about how to add Track, Jeep
+
+import jdk.jshell.spi.ExecutionControl;
+
+import java.util.ArrayList;
+
+//Заменить в коде Массив на ArrayList и LinkedList.
+//Изменить иерархию классов следующим образом: сделать класс Jeep абстрактным, сделать 2 производных класс
+// паркетник и рамный джипы, сделать еще несколько производных классов - конкретные марки джипов.
+
+public class Main {
+
+    static public Drive[] getEngines(){
+        Drive[] engines = new Drive[21];
+        engines[0] = new Car();
+        engines[1] = new Minivan();
+        engines[2] = new Minivan();
+        engines[3] = new Minivan();
+
+        // TODO: Add Jeep;
+        // TODO: Add Track;
+
+        engines[4] = new CrossOver();
+        engines[5] = new Pajero();
+        engines[6] = new FrameJeep();
+        engines[7] = new FrameJeep();
+        engines[8] = new Track();
+        engines[9] = new Track();
+        engines[10] = new Pajero();
+
+        engines[11] = new Bike();
+        engines[12] = new Bike();
+        engines[13] = new Bike();
+        engines[14] = new Bike();
+
+        engines[15] = new Train();
+
+        engines[16] = new Plain();
+
+        engines[17] = new Bike();
+        engines[18] = new Bike();
+        engines[19] = new Bike();
+        engines[20] = new Bike();
+
+        return engines;
+    }
+
+    public static void main(String[] args){
+
+        try {
+            for (Drive engine : getEngines()) {
+                engine.driveOn();
+            }
+
+            for (Drive engine : getEngines()) {
+                engine.driveOf();
+            }
+        }
+        //catch(ExecutionControl.NotImplementedException ex){
+        //    System.out.println(ex.toString());
+        //}
+        catch(Exception ex){
+            System.out.println(ex.toString());
+        }
+    }
+}
