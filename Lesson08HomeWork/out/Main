@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("1 - Медведь");
+        System.out.println("2 - Утка");
+        System.out.println("3 - Акула");
+        System.out.println("Пожалуйста, введите число");
+
+        Animals bear = new Bear();
+        Fishes shark = new Shark();
+        Birds duck = new Duck();
+
+        Scanner keyboard = new Scanner(System.in);
+        int anim = keyboard.nextInt();
+            if (anim == 1){
+                bear.Breathing();
+                bear.Moving();
+            }
+            else if (anim == 2){
+                duck.Breathing();
+                duck.Moving();
+            }
+            else if (anim == 3){
+                shark.Breathing();
+                shark.Moving();
+            }
+
+        }
+
+    }
