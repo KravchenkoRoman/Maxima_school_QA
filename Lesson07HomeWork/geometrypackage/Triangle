@@ -1,0 +1,37 @@
+package geometrypackage;
+
+public class Triangle implements Shape {
+
+    public Triangle() {
+        height = 0; 
+    }
+
+    public Triangle(double _height, double _base){
+        height = _height;
+        base = _base;
+    }
+
+    @Override
+    public double getArea() {
+        return 0.5 * base * height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public double getBase() {
+        return base;
+    }
+
+    private double height;
+    private double base;
+}
