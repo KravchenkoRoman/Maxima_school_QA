@@ -1,0 +1,17 @@
+
+public class FrameJeep extends Jeep{
+    @Override
+    public void driveOn() {
+
+    }
+
+    @Override
+    public void driveOf() throws Exception {
+
+    }
+
+    @Override
+    public void driving() {
+        super.driving();
+    }
+}
