@@ -1,1 +1,33 @@
 
+    // Вýберите лĀбой обüект из окружаĀûего мира, которýй вам важен, интересен, полезен.
+    // Опиúите его в виде класса+/набора классов, обāзателþно добавþте
+    // несколþко полей+ и конструктор+
+    // Создайте ÿкземплāр ÿтого класса в методе main+
+
+    public class Furniture {
+        String name;
+        int height;
+        int length;
+        int depth;
+
+        public Furniture(String name, int height, int length, int depth) {
+            this.name = name;
+            this.height = height;
+            this.length = length;
+            this.depth = depth;
+        }
+
+        public Furniture() {
+        }
+
+    public static void main(String[] args) {
+        Furniture closet = new Furniture();
+        String name = "Closet";
+        int height = 200;
+        int length = 100;
+        int depth = 40;
+
+        String newString = name + " " + height + "*" + length + "*" + depth;
+        System.out.println(newString);
+    }
+}
