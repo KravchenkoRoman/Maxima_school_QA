@@ -1,0 +1,14 @@
+public class Birds implements Breathe, Move{
+
+    @Override
+    public void Breathing() {
+        System.out.print("дышит лёгкими через клюв,");
+
+    }
+
+    @Override
+    public void Moving() {
+        System.out.println("летает");
+
+    }
+}
