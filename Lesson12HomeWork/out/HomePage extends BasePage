@@ -1,0 +1,8 @@
+class HomePage extends BasePage{
+    public boolean isImportantLabelAvailable(){
+            // TODO: Add logging
+            return true;
+    }
+
+    private WebElement important_label = new WebElement("Important Label locator");
+}
