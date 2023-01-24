@@ -1,0 +1,11 @@
+public class Pajero extends Jeep{
+    @java.lang.Override
+    public void driveOn() {
+
+    }
+
+    @java.lang.Override
+    public void driveOf() throws Exception {
+
+    }
+}
