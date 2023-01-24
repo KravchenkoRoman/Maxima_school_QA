@@ -1,0 +1,11 @@
+class WebElement{
+    public WebElement(String locator) {
+        System.out.println("WebElement");
+    }
+
+    public void enterText(String login) {
+    }
+
+    public void click() {
+    }
+}
