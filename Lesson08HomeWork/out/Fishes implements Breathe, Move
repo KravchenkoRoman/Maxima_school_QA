@@ -1,0 +1,14 @@
+public class Fishes implements Breathe, Move{
+
+
+    @Override
+    public void Breathing() {
+        System.out.print("дышит жабрами, ");
+
+    }
+
+    @Override
+    public void Moving() {
+        System.out.println("плавает");
+    }
+}
