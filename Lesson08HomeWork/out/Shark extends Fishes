@@ -1,0 +1,13 @@
+public class Shark extends Fishes{
+    @Override
+    public void Breathing() {
+        System.out.print("Акула ");
+        super.Breathing();
+    }
+
+    @Override
+    public void Moving() {
+        System.out.print("");
+        super.Moving();
+    }
+}
