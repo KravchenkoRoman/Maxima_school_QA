@@ -1,0 +1,23 @@
+    // TODO*: add 2 phase authentication for login functionality
+    // TODO**: Dynamic Page Object (object based) => Static Page Object (only static method based)
+
+import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+
+    // TODO: use JUnit or TestNG
+
+    class LoginTest extends BaseTest{
+    @Test
+    public void loginTest(){
+            // TODO: Add reading from default input file
+            // TODO***: Add xml serialization \ deSerialization for LoginData
+            // 3A Rule
+
+        BasePage.LoginData ld = new BasePage.LoginData("some login", "some password");
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(ld);
+
+        HomePage homePage = new HomePage();
+        Assert.assertTrue(homePage.isImportantLabelAvailable());
+        }
+    }
