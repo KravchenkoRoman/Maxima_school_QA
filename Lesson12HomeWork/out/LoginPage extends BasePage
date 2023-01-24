@@ -1,0 +1,34 @@
+public class LoginPage extends BasePage{
+    public void login(LoginData ld){
+            // TODO: Impl me!
+            enterLogin(ld.getLogin());
+            enterPassword(ld.getPassword());
+            clickSubmitButton();
+    }
+
+    private void enterLogin(String login){
+            // TODO: do something with login_eb
+            // TODO: Add logging
+
+        login_eb.enterText(login);
+    }
+
+    private void enterPassword(String password){
+            // TODO: do something with password_eb
+            // TODO: Add logging
+
+        password_eb.enterText(password);
+    }
+
+    private void clickSubmitButton(){
+            // TODO: do something with submit_button
+            // TODO: Add logging
+
+        submit_button.click();
+    }
+
+    private WebElement login_eb = new WebElement("Login Edit Box locator");
+    private WebElement password_eb = new WebElement("Password Edit Box locator");
+    private WebElement submit_button = new WebElement("Submit Button locator");
+}
+
