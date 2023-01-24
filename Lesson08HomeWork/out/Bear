@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Bear extends Animals{
+    @Override
+    public void Breathing() {
+        System.out.print("Медведь ");
+        super.Breathing();
+
+    }
+
+    @Override
+    public void Moving() {
+        System.out.print("Медведь ");
+        super.Moving();
+    }
+}
